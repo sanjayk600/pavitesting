@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>View Guest Lecture Requests</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    h1, h2 {
+      color: #333;
+    }
+
+    .requests-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .request-box {
+      flex: 0 0 calc(33.33% - 20px);
+      margin: 10px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      background-color: #f9f9f9;
+    }
+
+    p {
+      margin: 5px 0;
+    }
+
+    /* Styling for buttons */
+    .action-button {
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 14px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
+    .action-button:hover {
+      background-color: #45a049;
+    }
+  </style>
+  <script>
+    // JavaScript code
+    function handleButtonClick(button) {
+      button.innerHTML = "Accepted";
+    }
+  </script>
+</head>
+<body>
+  <h1>View Guest Lecture Requests</h1>
+
+  <div class="requests-container">
+    <!-- Guest Lecture Request 1 -->
+    <div class="request-box">
+      <h2>Request Details</h2>
+      <p>Request ID: [Request ID]</p>
+      <p>Requester Name: [Requester Name]</p>
+      <p>Requester Email: [Requester Email]</p>
+      <!-- ...Rest of the request details... -->
+
+      <h2>Guest Speaker Information</h2>
+      <p>Speaker Name: [Speaker Name]</p>
+      <!-- ...Rest of the speaker information... -->
+
+      <!-- ...Rest of the sections... -->
+
+      <h2>Status and Actions</h2>
+      <p>Status: [Status]</p>
+      <button class="action-button" onclick="handleButtonClick(this)">Approve</button>
+      <button class="action-button" onclick="handleButtonClick(this)">Decline</button>
+    </div>
+
+    <!-- Guest Lecture Request 2 -->
+    <div class="request-box">
+      <!-- ...Content for the second request... -->
+    </div>
+
+    <!-- Guest Lecture Request 3 -->
+    <div class="request-box">
+      <!-- ...Content for the third request... -->
+    </div>
+
+    <!-- Add more request boxes as needed -->
+  </div>
+
+</body>
+</html>

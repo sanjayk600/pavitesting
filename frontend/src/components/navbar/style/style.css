@@ -1,0 +1,33 @@
+.navbar{
+	display: flex;
+	padding: 5px;
+	background-color: #EE2B47;
+	position: fixed;
+	width: 100%;
+	top: 0;
+}
+
+.navInner{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	padding: 5px;
+	
+}
+.navLink{
+	color:#F6F6F6;
+	padding: 3px;
+	font-size: larger;
+	font-weight: bold;
+}
+.navLink:hover{
+	color:#000000;
+	text-decoration: none;
+	cursor: pointer;
+	/* background-color: #2C2E3E; */
+	
+	
+}

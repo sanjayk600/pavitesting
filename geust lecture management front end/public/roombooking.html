@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hall Booking </title>
+  <style>
+    /* CSS styles for overall layout */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-image: url("dash.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    h1 {
+      text-align: center;
+      color: white;
+    }
+
+    /* CSS styles for room containers */
+    .room-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .room-card {
+      width: 300px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+      background-color: #ece9e9;
+      transition: box-shadow 0.3s ease-in-out;/* Your desired background color */
+    }
+
+    .room-card:hover {
+      box-shadow: 0 0 20px rgb(0, 0, 0);
+    }
+
+    .room-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .room-description {
+      margin-top: 10px;
+      font-weight:200px;
+    }
+
+    .book-button {
+      display: block;
+      width: 100%;
+      padding: 8px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #42b246;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .booked-button {
+      display: block;
+      width: 100%;
+      padding: 8px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #d33d26;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+.book {
+  width:10%;
+  color:black;
+}
+    .book-button:hover {
+      background-color: #45a049;
+    }
+    
+  </style>
+</head>
+<body>
+  <a href="admindashboard.html"><button class="book" onclick="admindashboard.html">home</button></a>
+  <br> <br> <br>
+
+  <div class="room-container">
+    <div class="room-card">
+      <h2>Hall 1</h2>
+      <img class="room-image" src="tiered_seating_lecture_hall.jpg" alt="Room 1">
+      <p class="room-description">CAPACITY:100</p>
+      <button class="booked-button" onclick="bookRoom(1)">Booked </button>
+    </div>
+
+    <div class="room-card">
+      <h2>Hall 2</h2>
+      <img class="room-image" src="image2.jfif" alt="Room 2">
+      <p class="room-description">CAPACITY:210</p>
+      <button class="book-button" onclick="bookRoom(2)">Book Now</button>
+    </div>
+
+    <div class="room-card">
+        <h2>Hall 3</h2>
+        <img class="room-image" src="image3.jfif" alt="Room 2">
+        <p class="room-description">CAPACITY:312</p>
+        <button class="book-button" onclick="bookRoom(2)">Book Now</button>
+      </div>
+
+      <div class="room-card">
+        <h2>hall 4</h2>
+        <img class="room-image" src="image6.jfif" alt="Room 2">
+        <p class="room-description">CAPACITY:190</p>
+        <button class="booked-button" onclick="bookRoom(2)">Booked</button>
+      </div>
+
+
+      <div class="room-card">
+        <h2>Hall 5</h2>
+        <img class="room-image" src="image7.jfif" alt="Room 2">
+        <p class="room-description">CAPACITY:180</p>
+        <button class="book-button" onclick="bookRoom(2)">Book Now</button>
+      </div>
+
+
+      <div class="room-card">
+        <h2>Hall 6</h2>
+        <img class="room-image" src="image5.jfif" alt="Room 2">
+        <p class="room-description">CAPACITY:450</p>
+        <button class="booked-button" onclick="bookRoom(2)">Booked</button>
+      </div>
+
+
+
+      <div class="room-card">
+        <h2>Hall 7</h2>
+        <img class="room-image" src="image10.jfif" alt="Room 2">
+        <p class="room-description">CAPACITY:135.</p>
+        <button class="book-button" onclick="bookRoom(2)">Book Now</button>
+      </div>
+
+
+
+      <div class="room-card">
+        <h2>Hall 8</h2>
+        <img class="room-image" src="image11.jfif" alt="Room 2">
+        <p class="room-description">CAPACITY:187.</p>
+        <button class="booked-button" onclick="bookRoom(2)">Booked</button>
+      </div>
+
+
+      
+    <!-- Repeat the above code for more rooms -->
+  </div>
+
+
+  <script src="dummy.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+
+  
+  .requests-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .request-box {
+    flex: 0 0 calc(33.33% - 20px);
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+  }
+  .request-box  h2{
+    color: #2C2E3E;
+  }
+  
+  .request-box  p {
+   color: #2C2E3E;
+  }
+  
+  /* Styling for buttons */
+  .action-button {
+    background-color: #EE2B47;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .action-button:hover {
+    opacity: 0.8;
+  }
+  

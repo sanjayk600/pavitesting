@@ -1,0 +1,69 @@
+/* Style for body added on 24 may 2023 --akash r prabhu*/
+
+body {
+    background-color: #34374C;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+  }
+  
+  .cardContentText{
+    color: #2C2E3E!;
+  }
+  
+  
+  /* Styling for the main content */
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Styling for the cards */
+  .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 9em;
+
+  }
+  
+  .card {
+    background-color: #F6F6F6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    height: 250px;
+    margin: 20px;
+    text-align: center;
+    font-family: arial;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: border-color 0.3s;
+    cursor: pointer;
+  }
+
+  .card:hover {
+    color: #EE2B47;
+  }
+  
+  
+  .card-content {
+    padding: 20px;
+  }
+  
+  .card h2 {
+    margin-top: 3px;
+  }
+  
+  .card p {
+    margin-bottom: 0;
+  }
+  
+  .room {
+    text-decoration: none;
+  }
+
+
+  

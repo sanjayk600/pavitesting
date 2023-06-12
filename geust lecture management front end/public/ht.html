@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Guest Lecture Request Page</title>
+  <style>
+    /* Page styling */
+    body {
+      font-family: "Arial", sans-serif;
+      background-image: url('frog.jpg');
+      background-size: cover;
+      background-position: center;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+
+    /* Table styling */
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      border: 2px solid #000;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 10px;
+    }
+
+    th, td {
+      border: 1px solid #000;
+      padding: 12px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    th {
+      background-color: #000;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #fff;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    tr:hover {
+      background-color: #d9d9d9;
+    }
+
+    /* Button styling */
+    .cancel-button {
+      background-color: #f44336;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    .cancel-button:hover {
+      background-color: #d32f2f;
+    }
+  </style>
+</head>
+<body>
+  <h1>Guest Lecture Request Page</h1>
+  <table id="guest-table">
+    <thead>
+      <tr>
+        <th>Event Name</th>
+        <th>Guest ID</th>
+        <th>Guest Name</th>
+        <th>Cancel Request</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Event 1</td>
+        <td>1</td>
+        <td>Guest 1</td>
+        <td><button class="cancel-button" onclick="removeRow(this)">Cancel</button></td>
+      </tr>
+      <tr>
+        <td>Event 2</td>
+        <td>2</td>
+        <td>Guest 2</td>
+        <td><button class="cancel-button" onclick="removeRow(this)">Cancel</button></td>
+      </tr>
+      <tr>
+        <td>Event 3</td>
+        <td>3</td>
+        <td>Guest 3</td>
+        <td><button class="cancel-button" onclick="removeRow(this)">Cancel</button></td>
+      </tr>
+      <tr>
+        <td>Event 4</td>
+        <td>4</td>
+        <td>Guest 4</td>
+        <td><button class="cancel-button" onclick="removeRow(this)">Cancel</button></td>
+      </tr>
+      <tr>
+        <td>Event 5</td>
+        <td>5</td>
+        <td>Guest 5</td>
+        <td><button class="cancel-button" onclick="removeRow(this)">Cancel</button></td>
+      </tr>
+      <tr>
+        <td>Event 6</td>
+        <td>6</td>
+        <td>Guest 6</td>
+        <td><button class="cancel-button" onclick="removeRow(this)">Cancel</button></td>
+      </tr>
+      <tr>
+        <td>Event 7</td>
+        <td>7</td>
+        <td>Guest 7</td>
+        <td><button class="cancel-button" onclick="removeRow(this)">Cancel</button></td>
+      </tr>
+      <tr>
+        <td>Event 8</td>
+        <td>8</td>
+        <td>Guest 8</td>
+        <td><button class="cancel-button" onclick="removeRow(this)">Cancel</button></td>
+      </tr>
+      <tr>
+        <td>Event 9</td>
+        <td>9</td>
+        <td>Guest 9</td>
+        <td><button class="cancel-button" onclick="removeRow(this)">Cancel</button></td>
+      </tr>
+      <!-- Add more rows for additional guests -->
+    </tbody>
+  </table>
+
+  <script>
+    function removeRow(button) {
+      var row = button.parentNode.parentNode;
+      row.parentNode.removeChild(row);
+    }
+  </script>
+</body>
+</html>

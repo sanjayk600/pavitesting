@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Abel');
+
+.form ,.form label{
+  color: #F6F6F6 !important;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.form label {
+  font-size: larger;
+  font-weight: 800;
+}
+
+
+.text-box {
+  background-color: #2C2E3E;
+  border-radius: 20px;
+  margin: 2em auto;
+  padding: 20px;
+  width: 100%;
+}
+
+
+
+
+p {
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 1.2em;
+}
+
+hr {
+  width: 70%;
+  margin: 10px auto;
+}
+
+
+
+
+.labels {
+  display: table;
+  text-align: left;
+  width: 100%;
+
+  margin-top: 20px;
+  float: left;
+  font-family: 'Courier New', Courier, monospace;
+  align-items: center;
+  justify-content: center;
+}
+.name-labels{
+  display: table-cell;
+  padding: 5px;
+  /* float: left; */
+}
+span {
+  display: block;
+  /* overflow: hidden; */
+}
+.input-tab {
+  display: table-cell;
+  text-align: right;
+  width: 50%;
+  margin-top: 20px;
+  margin-left: 20%;
+  /* float: right; */
+  flex-wrap: wrap;
+}
+
+.input-field {
+  /* display: flex; */
+  width: 50%;
+  padding: 5px;
+  /* margin: 18px 0 0 10px; */
+  border: 1px solid #e67d224c;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: bold;
+  float: right;
+  flex-wrap: wrap;
+}
+
+::-webkit-input-placeholder {
+   /* font-style: italic; */
+  font-weight: 300;
+}
+
+
+input {
+  flex-wrap: wrap;
+  /* margin: 7px; */
+}
+
+#dropdown {
+  width: 100%;
+  padding: 5px;
+  margin: 20px 0 10px 10px;  
+  border: 1px solid #e67e22;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 15px;
+}
+.btn {
+  width: 100%;
+  text-align: center;
+  margin: 20px;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+  
+  
+  h1 {
+    font-size: 2em;
+    display: block;
+    position: absolute;
+  }
+  
+  .labels {
+    width: 50%;
+    text-align: left;
+    float: left;
+  }
+  .input-tab {
+    width: 50%;
+    float: right;
+    /* margin-left: -10px; */
+  }
+  .input-field {
+    width: 50%;
+  }
+  select {
+    width: 50%;
+  }
+  .btn {
+    width: 100%;
+    margin: auto;
+  }
+
+
+
+
+}

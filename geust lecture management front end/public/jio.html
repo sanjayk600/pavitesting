@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Dashboard</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+   
+   *{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Montserrat', sans-serif;
+   }
+   body{
+     padding: 0 10px;
+     background-image: url("pa.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+   }
+   .wrapper{
+     max-width: 500px;
+     border-radius: 10px;
+     width: 100%;
+     background: #dbd9d9;
+     margin: 50px auto;
+     box-shadow: 2px 2px 4px rgba(139, 14, 139, 0.125);
+     padding: 30px;
+   }
+   
+   .wrapper .title{
+     font-size: 24px;
+     font-weight: 700;
+     margin-bottom: 25px;
+     color: #c2099a;
+     text-transform: uppercase;
+     text-align: center;
+   }
+   
+   .wrapper .form{
+     width: 100%;
+   }
+   
+   .wrapper .form .inputfield{
+     margin-bottom: 15px;
+     display: flex;
+     align-items: center;
+   }
+   
+   .wrapper .form .inputfield label{
+      width: 200px;
+      color: #757575;
+      margin-right: 10px;
+     font-size: 14px;
+   }
+   
+   .wrapper .form .inputfield .input,
+   .wrapper .form .inputfield .textarea{
+     width: 100%;
+     outline: none;
+     border: 1px solid #060b09;
+     font-size: 15px;
+     padding: 8px 10px;
+     border-radius: 10px;
+     transition: all 0.3s ease;
+   }
+   
+   .wrapper .form .inputfield .textarea{
+     width: 100%;
+     height: 125px;
+     resize: none;
+   }
+   
+   .wrapper .form .inputfield .custom_select{
+     position: relative;
+     width: 100%;
+     height: 37px;
+   }
+   
+   .wrapper .form .inputfield .custom_select:before{
+     content: "";
+     position: absolute;
+     top: 12px;
+     right: 10px;
+     border: 8px solid;
+     border-color: #1e1f1f transparent transparent transparent;
+     pointer-events: none;
+   }
+   
+   .wrapper .form .inputfield .custom_select select{
+     -webkit-appearance: none;
+     -moz-appearance:   none;
+     appearance:        none;
+     outline: none;
+     width: 100%;
+     height: 100%;
+     border: 0px;
+     padding: 8px 10px;
+     font-size: 15px;
+     border: 1px solid #d5dbd9;
+     border-radius: 3px;
+   }
+   
+   
+   .wrapper .form .inputfield .input:focus,
+   .wrapper .form .inputfield .textarea:focus,
+   .wrapper .form .inputfield .custom_select select:focus{
+     border: 1px solid #9204ae;
+   }
+   
+   .wrapper .form .inputfield p{
+      font-size: 14px;
+      color: #757575;
+   }
+   .wrapper .form .inputfield .check{
+     width: 15px;
+     height: 15px;
+     position: relative;
+     display: block;
+     cursor: pointer;
+   }
+   .wrapper .form .inputfield .check input[type="checkbox"]{
+     position: absolute;
+     top: 0;
+     left: 0;
+     opacity: 0;
+   }
+   .wrapper .form .inputfield .check .checkmark{
+     width: 15px;
+     height: 15px;
+     border: 1px solid #a60686;
+     display: block;
+     position: relative;
+   }
+   .wrapper .form .inputfield .check .checkmark:before{
+     content: "";
+     position: absolute;
+     top: 1px;
+     left: 2px;
+     width: 5px;
+     height: 2px;
+     border: 2px solid;
+     border-color: transparent transparent #000000 #fff;
+     transform: rotate(-45deg);
+     display: none;
+   }
+   .wrapper .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark{
+     background: #fec107;
+   }
+   
+   .wrapper .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark:before{
+     display: block;
+   }
+   
+   .wrapper .form .inputfield .btn{
+     width: 100%;
+      padding: 8px 10px;
+     font-size: 15px; 
+     border: 0px;
+     background:  #c206c5;
+     color: #fff;
+     cursor: pointer;
+     border-radius: 3px;
+     outline: none;
+   }
+   
+   .wrapper .form .inputfield .btn:hover{
+     background: #dedcd9;
+   }
+   
+   .wrapper .form .inputfield:last-child{
+     margin-bottom: 0;
+   }
+   
+   @media (max-width:420px) {
+     .wrapper .form .inputfield{
+       flex-direction: column;
+       align-items: flex-start;
+     }
+     .wrapper .form .inputfield label{
+       margin-bottom: 5px;
+     }
+     .wrapper .form .inputfield.terms{
+       flex-direction: row;
+     }
+   }
+       
+     </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="title">
+      Registration Form
+    </div>
+    <div class="form">
+      <div class="inputfield">
+        <label>Name</label>
+        <input type="text" class="input" id="nameInput">
+      </div>
+
+      <div class="inputfield">
+        <label>Roll No</label>
+        <input type="text" class="input" id="rollNoInput">
+      </div>
+
+      <div class="inputfield">
+        <label>Email Address</label>
+        <input type="email" class="input" id="emailInput">
+      </div>
+
+      <div class="inputfield">
+        <label>Phone Number</label>
+        <input type="text" class="input" id="phoneInput">
+      </div>
+
+      <div class="inputfield">
+        <label>Lecture Name</label>
+        <input type="text" class="input" id="lectureInput">
+      </div>
+
+      <div class="inputfield">
+        <input type="submit" value="Register" class="btn" onclick="register()">
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function register() {
+      // Validate email
+      var emailInput = document.getElementById("emailInput");
+      var email = emailInput.value;
+      if (!validateEmail(email)) {
+        alert("Please enter a valid email address.");
+        return;
+      }
+
+      // Perform registration process
+      // You can add your own code here to process the registration
+
+      // Show registration successful message
+      alert("Registration successful");
+    }
+
+    function validateEmail(email) {
+      var re = /\S+@\S+\.\S+/;
+      return re.test(email);
+    }
+  </script>
+</body>
+</html>

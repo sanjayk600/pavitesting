@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Page</title>
+  <link rel="stylesheet" type="text/css" href="lstyle.css">
+</head>
+<body>
+    <br> <br>
+    <h2 style="color:white">Welcome to Guest Lecture Management System</h2>
+    <br>
+    <br>
+    <br>
+    <div class="center">
+  <div class="container">
+    
+    <form id="loginForm" onsubmit="validateLogin(event)">
+      <h2>Login</h2>
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="form-group">
+        <label for="usertype">User Type:</label>
+        <select id="usertype" name="usertype">
+          <option value="admin">Admin</option>
+          <option value="user">User</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <button type="submit">Login</button>
+      </div>
+    </form>
+  </div>
+</div>
+  <script src="ljava.js"></script>
+</body>
+</html>

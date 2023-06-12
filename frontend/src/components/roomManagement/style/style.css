@@ -1,0 +1,70 @@
+h1,h2 {
+    text-align: center;
+    color: black;
+  }
+
+  /* CSS styles for room containers */
+  .room-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .room-card {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: #ece9e9;
+    transition: box-shadow 0.3s ease-in-out;/* Your desired background color */
+  }
+
+  .room-card:hover {
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+  }
+
+  .room-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+  .room-description {
+    margin-top: 10px;
+    font-weight:200px;
+  }
+
+  .book-button {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #EE2B47;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .booked-button {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #d33d26;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+.book {
+width:10%;
+color:black;
+}
+  .book-button:hover {
+    background-color: #45a049;
+  }

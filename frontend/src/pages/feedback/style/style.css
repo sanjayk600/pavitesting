@@ -1,0 +1,15 @@
+.feedbackCard{
+    color: #F6F6F6;
+}
+.feedbackCard{
+    background-color: #2C2E3E;
+    padding: 9px;
+    margin: 3px;
+    width: fit-content;
+    min-width: 200px;
+
+
+}
+.feedbackCardContainer{
+    display: flex;
+}

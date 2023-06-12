@@ -1,0 +1,241 @@
+/* CSS styles for lecture boxes */
+body{
+    margin-top: 2rem;
+    padding: 0;
+    margin: 0;
+}
+
+.header{
+	background-color: #374955;
+    position: fixed;
+	line-height: 1.5;
+  width: 100%;
+  margin-top: -1.9rem;
+  padding: 0;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+    
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+    
+}
+.align-items-center{
+	align-items: center;
+}
+.justify-content-between{
+	justify-content: space-between;
+}
+.header .logo a{
+	font-size: 30px;
+	color: #ffffff;
+	text-transform: capitalize;
+    text-decoration: none;
+}
+.header .nav ul li{
+	padding-bottom: 10px;
+	display: inline-block;
+	margin-left: 20px;
+    padding-top: 10px;
+}
+.header .nav ul li a{
+	display: block;
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	padding: 10px 0;
+	transition: all 0.5s ease;
+    text-decoration: none;
+}
+.header .nav ul li a img{
+	margin-left: 10px;
+	margin-bottom: -10px;
+  }
+.header .nav ul li a.active,
+.header .nav ul li a:hover{
+	color: #019ED3;
+}
+.nav-toggler{
+	height: 34px;
+	width: 44px;
+	background-color: #ffffff;
+	border-radius: 4px;
+	cursor: pointer;
+	border:none;
+	display: none;
+	margin-right: 15px;
+    
+}
+.nav-toggler:focus{
+	outline: none;
+	box-shadow: 0 0 15px rgba(255,255,255,0.5);
+}
+.nav-toggler span{
+    height: 2px;
+    width: 20px;
+    background-color: var(--color-1);
+    display: block;
+    margin:auto;
+    position: relative;
+    transition: all 0.3s ease;
+}
+.nav-toggler.active span{
+	background-color: transparent;
+}
+.nav-toggler span::before,
+.nav-toggler span::after{
+	content: '';
+	position: absolute;
+	left:0;
+	top:0;
+	width: 100%;
+	height: 100%;
+	background-color: var(--color-1);
+	transition: all 0.3s ease;
+}
+.nav-toggler span::before{
+	transform: translateY(-6px);
+}
+.nav-toggler.active span::before{
+	transform: rotate(45deg);
+}
+.nav-toggler span::after{
+	transform: translateY(6px);
+}
+.nav-toggler.active span::after{
+	transform: rotate(135deg);
+}
+
+.search {
+	width: 100%;
+	position: relative;
+	display: flex;
+  }
+  
+  .searchTerm {
+	width: 100%;
+	border: 3px solid #00B4CC;
+	border-right: none;
+	padding: 5px;
+	height: 36px;
+	border-radius: 5px 0 0 5px;
+	outline: none;
+	color: #9DBFAF;
+  }
+  
+  .searchTerm:focus{
+	color: #00B4CC;
+  }
+  
+  .searchButton {
+	width: 40px;
+	height: 51.5px;
+	border: 1px solid #00B4CC;
+	background: #00B4CC;
+	text-align: center;
+	color: #fff;
+	border-radius: 0 5px 5px 0;
+	cursor: pointer;
+	font-size: 20px;
+  }
+  .searchButton img{
+	height: 25px;
+  }
+  
+  /*Resize the wrap to see the search bar change!*/
+  .wrap{
+	width: 30%;
+	position: absolute;
+	top: 60%;
+	left: 40%;
+	transform: translate(-50%, -50%);
+  }
+  
+/* CSS styles for lecture boxes */
+.header {
+    background-color: #374955;
+    position: fixed;
+	line-height: 1.5;
+  width: 100%;
+  margin-top: -1.9rem;
+  padding: 0;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+  }
+
+body {
+    background-color: #f5f5f5;
+  }
+  
+  .c {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .lecture-box {
+    width: 300px;
+    height: fit-content;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 10px;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    transform-style: preserve-3d;
+  }
+  
+  .lecture-box:hover {
+    transform: translateY(-5px) rotateX(10deg) rotateY(10deg);
+  }
+  
+  .lecture-box img {
+    width: 100%;
+    height: 200px; /* Adjust the height as desired */
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .lecture-box h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .lecture-box p {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .register-button {
+    align-self: flex-end;
+    padding: 5px 10px;
+    background-color: #f44336;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 3px;
+  }
+  
+  /* Add more CSS styles as needed */
+  
+.addLectureButton{
+/* align to right end */
+float: right;
+margin-right: 10px;
+margin-top: 10px;
+}
+
+.addLectureButton:hover{
+  /* align to right end */
+  float: right;
+  margin-right: 10px;
+  margin-top: 10px;
+  color: black;
+  }

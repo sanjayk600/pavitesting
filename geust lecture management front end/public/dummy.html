@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    /* Styling for the side navigation bar */
+    .sidebar {
+      height: 100%;
+      width: 180px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #333;
+      overflow-x: hidden;
+      padding-top: 20px;
+    }
+
+    .sidebar a {
+      padding: 10px;
+      text-decoration: none;
+      font-size: 16px;
+      color: #f2f2f2;
+      display: block;
+      transition: background-color 0.3s;
+    }
+
+    .sidebar a:hover {
+      background-color: #555;
+      color: white;
+    }
+
+    /* Styling for the dropdown */
+    .dropdown-content {
+      display: none;
+      padding-left: 20px;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    /* Styling for the dropdown button */
+    .dropdown-btn {
+      padding: 10px;
+      text-decoration: none;
+      font-size: 16px;
+      color: #f2f2f2;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border: none;
+      background-color: inherit;
+      width: 100%;
+      text-align: left;
+      cursor: pointer;
+      outline: none;
+      transition: background-color 0.3s;
+    }
+
+    .dropdown-btn i {
+      margin-right: 10px;
+    }
+
+    .dropdown-btn:hover {
+      background-color: #555;
+      color: white;
+    }
+
+    /* Styling for the main content */
+    .content {
+      margin-left: 200px;
+      padding: 20px;
+    }
+
+    /* Styling for the cards */
+    .card-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .card {
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      width: 400px;
+      height: 250px;
+      margin: 20px;
+      text-align: center;
+      font-family: arial;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: border-color 0.3s;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      border-color: #000;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card h2 {
+      margin-top: 0;
+    }
+
+    .card p {
+      margin-bottom: 0;
+    }
+
+    /* Styling for the background image */
+    body {
+      background-image: url('hip.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+    }
+  </style>
+</head>
+<body>
+  <!-- Side Navigation Bar -->
+  <div class="sidebar">
+    <a href="#">Home</a>
+    <div class="dropdown">
+      <button class="dropdown-btn">Lecture Management <i class="fas fa-caret-down"></i></button
+        <div class="dropdown-content">
+          <a href="#">Add Lecture</a>
+          <a href="#">Edit Lecture</a>
+          <a href="#">Delete Lecture</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropdown-btn">Hall Management <i class="fas fa-caret-down"></i></button>
+        <div class="dropdown-content">
+          <a href="#">Add Hall</a>
+          <a href="#">Edit Hall</a>
+          <a href="#">Delete Hall</a>
+        </div>
+      </div>
+      <a href="#">Lecture Schedule</a>
+    </div>
+  
+    <!-- Main Content -->
+    <div class="content">
+      <!-- Cards -->
+      <div class="card-container">
+        <div class="card">
+          <div class="card-content">
+            <i class="fas fa-chalkboard-teacher fa-7x"></i>
+            <h2>Lecture Management</h2>
+            <p>Manage lectures and course materials.</p>
+          </div>
+        </div>
+  
+        <div class="card">
+          <div class="card-content">
+            <i class="fas fa-building fa-7x"></i>
+            <h2>Hall Management</h2>
+            <p>Manage halls and scheduling of events.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <script>
+      // JavaScript for dropdown functionality
+      var dropdownBtns = document.querySelectorAll(".dropdown-btn");
+  
+      dropdownBtns.forEach(function(btn) {
+        btn.addEventListener("click", function() {
+          var dropdownContainer = this.nextElementSibling;
+          dropdownContainer.style.display = dropdownContainer.style.display === "block" ? "none" : "block";
+        });
+      });
+    </script>
+  </body>
+  </html>
